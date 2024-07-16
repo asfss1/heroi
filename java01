@@ -1,0 +1,28 @@
+// Variáveis para armazenar o nome e a quantidade de experiência (XP) de um herói
+let nomeHeroi = "Superman";
+let xpHeroi = 7500;
+
+// Variável para armazenar a classificação
+let classificacao;
+
+// Estrutura de decisão para determinar a classificação com base na XP
+if (xpHeroi < 1000) {
+    classificacao = "Ferro";
+} else if (xpHeroi <= 2000) {
+    classificacao = "Bronze";
+} else if (xpHeroi <= 5000) {
+    classificacao = "Prata";
+} else if (xpHeroi <= 7000) {
+    classificacao = "Ouro";
+} else if (xpHeroi <= 8000) {
+    classificacao = "Platina";
+} else if (xpHeroi <= 9000) {
+    classificacao = "Ascendente";
+} else if (xpHeroi <= 10000) {
+    classificacao = "Imortal";
+} else {
+    classificacao = "Radiante";
+}
+
+// Apresentação da mensagem
+console.log(`O herói ${nomeHeroi} tem ${xpHeroi} XP e está na classificação ${classificacao}.`);
